@@ -11,6 +11,18 @@ export const NETWORKS = {
         testnetID: 5,
         blockExplorerURL: "https://etherscan.io"
     },
+    11155111: {
+        name: "Rinkeby",
+        chain: "ethereum",
+        rpcURL: "https://sepolia.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+        currency: {
+            name: "Ether",
+            symbol: "ETH",
+            decimals: 18
+        },
+        testnetID: 11155111,
+        blockExplorerURL: "https://sepolia.etherscan.io"
+    },
     4: {
         name: "Rinkeby",
         chain: "ethereum",
@@ -233,5 +245,6 @@ export const getBaseURL = () => {
     if (window.location.href.includes("localhost")) {
         return window.location.origin
     }
-    return "https://nftcomponents.vercel.app"
+    return "https://webflow-nft-components-theta.vercel.app";
+    // return "https://nftcomponents.vercel.app"
 }
